@@ -90,8 +90,8 @@ In pfsense when acme pakage is updated acme.inc is overwritten, thus it has to b
 
 ## Aknowledgements
 * Thanks to onley for dns_zoneedit_rm
-* Thanks to sbn-purchark for mayorimprovement of the script.
+* Thanks to sbn-purchark for major improvements of the script.
 
 ## Known issues
-* It has been reported that dns_zoneedit_rm reports in false positives in some cases.
+* It has been reported that dns_zoneedit_rm reports in false positives in some cases. --> [Workaround implemented](https://github.com/blueslow/sslcertzoneedit/pull/8)
 
