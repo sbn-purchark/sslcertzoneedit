@@ -109,7 +109,7 @@ _zoneedit_api() {
     fi
     _debug2 response "$response"
     if _contains "$response" "SUCCESS.*200"; then
-      # Sleep (when needed) to work around a Zonedit API bug
+      # Sleep (when needed) to work around a Zoneedit API bug
       # https://forum.zoneedit.com/threads/automating-changes-of-txt-records-in-dns.7394/page-2#post-23855
       if [ "$ze_sleep" ]; then _sleep "$ze_sleep"; fi
       return 0
