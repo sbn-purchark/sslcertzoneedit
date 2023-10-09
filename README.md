@@ -42,6 +42,12 @@ Then:
 acme.sh --issue --dns dns_zoneedit -d example.com -d www.example.com
 ```
 
+Note, acme.sh uses ZeroSSL by default, see [The acme.sh will change default CA to ZeroSSL on August-1st 2021](https://community.letsencrypt.org/t/the-acme-sh-will-change-default-ca-to-zerossl-on-august-1st-2021/144052) for more info. If you want to use letsencrypt, use the command below.
+
+```
+acme.sh --set-default-ca letsencrypt
+```
+
 ## Pfsense installation
 Install the acme package. Place the dns_zoneedit.sh file into the /usr/local/pkg/acme/dnsapi/ folder.
 Then place the acme_zoneedit_inc.patch into the /usr/local/pkg/acme/ folder.
